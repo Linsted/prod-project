@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("someFn called"),document.body.innerHTML="Hello World!"})();
