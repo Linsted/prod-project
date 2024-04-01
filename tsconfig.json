@@ -6,7 +6,10 @@
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
-    "baseUrl": ".",
+     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+   },
     "moduleResolution": "node",
     // esModuleInterop gives you the ability to use named import instead of require in webpack.config.ts 
     "esModuleInterop" : true,

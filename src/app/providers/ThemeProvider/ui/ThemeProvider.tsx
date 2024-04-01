@@ -1,5 +1,9 @@
 import { useState, type FC } from "react";
-import { LOCAL_STORAGE_THEME_KEY, THEME, ThemeContext } from "./ThemeContext";
+import {
+  LOCAL_STORAGE_THEME_KEY,
+  THEME,
+  ThemeContext,
+} from "shared/config/theme/ThemeContext";
 
 const ThemeProvider: FC = ({ children }) => {
   const defaultTheme =
