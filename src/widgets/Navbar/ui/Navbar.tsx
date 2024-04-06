@@ -1,4 +1,5 @@
-import AppLink, { APP_LINK_THEME } from "shared/ui/AppLink/AppLink";
+import AppLink from "shared/ui/AppLink/AppLink";
+import ThemeSwitcher from "widgets/ThemeSwitcher/ui/ThemeSwitcher";
 
 import { ROUTS_PATHS } from "shared/config/routeConfig/routeConfig";
 import { classNames } from "shared/lib/classNames/classNames";
@@ -14,6 +15,7 @@ const Navbar = ({ className }: NavbarProps) => {
     <nav className={classNames(classes.navbar, {}, [className])}>
       <AppLink to={ROUTS_PATHS.MAIN}>Main</AppLink>
       <AppLink to={ROUTS_PATHS.ABOUT}>About</AppLink>
+      <ThemeSwitcher />
     </nav>
   );
 };
