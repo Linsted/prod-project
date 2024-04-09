@@ -33,6 +33,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@svgr/webpack": "^6.2.1",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",
