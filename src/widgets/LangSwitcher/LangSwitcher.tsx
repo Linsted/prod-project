@@ -11,16 +11,13 @@ const LangSwitcher = () => {
     i18n.changeLanguage(i18n.language === "uk" ? "en" : "uk");
   }
 
-    return (
-      <>
-        <Button className={classes.button} onClick={changeLanguage}>
-          {t("Змінити мову")}
-        </Button>
-        <Button className={classes.button} onClick={changeLanguage}>
-          {t("мову")}
-        </Button>
-      </>
-    );
+  return (
+    <>
+      <Button className={classes.button} onClick={changeLanguage}>
+        {t("Змінити мову")}
+      </Button>
+    </>
+  );
 };
 
 export default LangSwitcher;
