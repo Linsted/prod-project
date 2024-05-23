@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
-import classes from "./Sidebar.module.scss";
-import { classNames } from "shared/lib/classNames/classNames";
 import LangSwitcher from "widgets/LangSwitcher/LangSwitcher";
+
+import classNames from "shared/lib/classNames/classNames";
+import classes from "./Sidebar.module.scss";
 
 interface SidebarProps {
   className?: string;
 }
 
-const Sidebar = ({ className }: SidebarProps) => {
+function Sidebar({ className }: SidebarProps) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   function toggleCollapse() {
@@ -26,12 +26,14 @@ const Sidebar = ({ className }: SidebarProps) => {
         [className]
       )}
     >
-      <button onClick={toggleCollapse}>Toogle</button>
+      <button type="button" onClick={toggleCollapse}>
+        Toogle
+      </button>
       <div className={classes.switchers}>
         <LangSwitcher />
       </div>
     </aside>
   );
-};
+}
 
 export default Sidebar;

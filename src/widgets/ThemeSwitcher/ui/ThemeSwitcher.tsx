@@ -1,4 +1,4 @@
-import { useTheme } from "shared/config/theme/useTheme";
+import useTheme from "shared/config/theme/useTheme";
 
 import DarkThemeIcon from "shared/assets/icons/theme-dark.svg";
 import LightThemeIcon from "shared/assets/icons/theme-light.svg";

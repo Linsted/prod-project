@@ -1,13 +1,13 @@
 import { Suspense } from "react";
 
-import AppRouter from "./providers/router/ui/AppRouter";
-import Sidebar from "widgets/Sidebar/ui/SIdebar/Sidebar";
 import Navbar from "widgets/Navbar/ui/Navbar";
+import Sidebar from "widgets/Sidebar/ui/SIdebar/Sidebar";
+import AppRouter from "./providers/router/ui/AppRouter";
 
-import { classNames } from "../shared/lib/classNames/classNames";
-import { useTheme } from "../shared/config/theme/useTheme";
+import useTheme from "../shared/config/theme/useTheme";
+import classNames from "../shared/lib/classNames/classNames";
 
-const App = () => {
+function App() {
   const { theme } = useTheme();
 
   return (
@@ -21,6 +21,6 @@ const App = () => {
       </Suspense>
     </div>
   );
-};
+}
 
 export default App;

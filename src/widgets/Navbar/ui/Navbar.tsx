@@ -3,7 +3,7 @@ import ThemeSwitcher from "widgets/ThemeSwitcher/ui/ThemeSwitcher";
 import { useTranslation } from "react-i18next";
 
 import { ROUTS_PATHS } from "shared/config/routeConfig/routeConfig";
-import { classNames } from "shared/lib/classNames/classNames";
+import classNames from "shared/lib/classNames/classNames";
 
 import classes from "./Navbar.module.scss";
 

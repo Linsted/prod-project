@@ -1,7 +1,7 @@
 import React from "react";
 
-import { AboutPageLazy } from "pages/AboutPage/ui/AboutPage.lazy";
-import { MainPageLazy } from "pages/MainPage/ui/MainPage.lazy";
+import AboutPageLazy from "pages/AboutPage/ui/AboutPage.lazy";
+import MainPageLazy from "pages/MainPage/ui/MainPage.lazy";
 
 export enum ROUTES {
   MAIN = "main",

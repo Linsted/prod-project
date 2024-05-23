@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import Button, { BUTTON_THEME } from "shared/ui/Button/Button";
+import Button from "shared/ui/Button/Button";
 
 import classes from "./LangSwitcher.module.scss";
 
@@ -12,11 +12,9 @@ const LangSwitcher = () => {
   }
 
   return (
-    <>
-      <Button className={classes.button} onClick={changeLanguage}>
-        {t("Змінити мову")}
-      </Button>
-    </>
+    <Button className={classes.button} onClick={changeLanguage}>
+      {t("Змінити мову")}
+    </Button>
   );
 };
 

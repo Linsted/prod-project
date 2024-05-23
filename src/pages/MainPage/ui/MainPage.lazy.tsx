@@ -1,3 +1,5 @@
 import { lazy } from "react";
 
-export const MainPageLazy = lazy(() => import("./MainPage"));
+const MainPageLazy = lazy(() => import("./MainPage"));
+
+export default MainPageLazy;
