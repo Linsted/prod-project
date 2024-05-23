@@ -5,7 +5,7 @@ module.exports = {
     es2021: true,
   },
 
-  extends: ["plugin:react/recommended", "airbnb"],
+  extends: ["plugin:react/recommended", "airbnb", "plugin:i18next/recommended"],
 
   parser: "@typescript-eslint/parser",
 
@@ -19,7 +19,7 @@ module.exports = {
     sourceType: "module",
   },
 
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "i18next"],
 
   rules: {
     "linebreak-style": ["error", "windows"],
@@ -43,6 +43,7 @@ module.exports = {
     "react/jsx-props-no-spreading": "warn",
     "no-shadow": "off",
     "no-underscore-dangle": "off",
+    "i18next/no-literal-string": ["error", { markupOnly: true }],
   },
   globals: {
     _IS_DEV_: true,
