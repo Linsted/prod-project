@@ -45,6 +45,7 @@ module.exports = {
     "no-underscore-dangle": "off",
     "i18next/no-literal-string": ["error", { markupOnly: true }],
     indent: ["error", 2],
+    "react/jsx-one-expression-per-line": "off",
   },
   globals: {
     _IS_DEV_: true,
