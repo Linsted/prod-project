@@ -8,8 +8,8 @@ export default function classNames(
   return [
     mainClass,
     ...additionalClasses.filter(Boolean),
-    Object.entries(mods)
-      .filter(([_, value]) => !!value)
+    ...Object.entries(mods)
+      .filter(([_, value]) => Boolean(value))
       .map(([className]) => className),
   ].join(" ");
 }
