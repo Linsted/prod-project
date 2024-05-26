@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-
+    jest: true,
     es2021: true,
   },
 
@@ -30,7 +30,7 @@ module.exports = {
       { extensions: [".js", ".jsx", ".tsx"] },
     ],
     quotes: ["error", "double"],
-    "import/extensions": [1, "never"],
+    "import/extensions": [0, "never"],
     "no-unused-vars": "warn",
     "import/no-unresolved": "off",
     "comma-dangle": "off",
@@ -44,6 +44,7 @@ module.exports = {
     "no-shadow": "off",
     "no-underscore-dangle": "off",
     "i18next/no-literal-string": ["error", { markupOnly: true }],
+    indent: ["error", 2],
   },
   globals: {
     _IS_DEV_: true,
