@@ -22,6 +22,7 @@ module.exports = {
   plugins: ["react", "@typescript-eslint", "i18next"],
 
   rules: {
+    "object-curly-newline": "off",
     "linebreak-style": ["error", "windows"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-indent": [2, 2],

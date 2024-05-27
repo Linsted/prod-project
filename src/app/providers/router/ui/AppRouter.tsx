@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
 
 import PageLoader from "widgets/PageLoader/PageLoader";
@@ -7,8 +6,6 @@ import PageLoader from "widgets/PageLoader/PageLoader";
 import { routesConfig } from "shared/config/routeConfig/routeConfig";
 
 function AppRouter() {
-  const { t } = useTranslation();
-
   return (
     <Suspense fallback={<PageLoader />}>
       <Routes>
