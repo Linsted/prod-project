@@ -9,6 +9,7 @@
 const config = {
   clearMocks: true,
   testEnvironment: "jsdom",
+  modulePaths: ["<rootDir>src"],
   coveragePathIgnorePatterns: ["\\\\node_modules\\\\"],
   moduleDirectories: ["node_modules"],
   moduleFileExtensions: [
@@ -30,6 +31,12 @@ const config = {
   ],
   rootDir: "../../",
   testMatch: ["<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)"],
+  setupFilesAfterEnv: ["<rootDir>/config/jest/setupTests.ts"],
+  moduleNameMapper: {
+    "\\.s?css$": "identity-obj-proxy",
+    "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+      "<rootDir>/mocks/fileMock.ts",
+  },
 
   // All imported modules in your tests should be mocked automatically
 
@@ -237,8 +244,6 @@ const config = {
   // testRunner: "jest-circus/runner",
 
   // A map from regular expressions to paths to transformers
-
-  // transform: undefined,
 
   // An array of regexp pattern strings that are matched against
   //  all source file paths, matched files will skip transformation

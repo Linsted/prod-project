@@ -34,6 +34,7 @@ module.exports = {
     "import/extensions": [0, "never"],
     "no-unused-vars": "warn",
     "import/no-unresolved": "off",
+    "quote-props": "off",
     "comma-dangle": "off",
     "react/require-default-props": "off",
     "react/function-component-definition": "off",
