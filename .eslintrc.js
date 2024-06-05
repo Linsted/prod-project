@@ -45,11 +45,22 @@ module.exports = {
     "react/jsx-props-no-spreading": "warn",
     "no-shadow": "off",
     "no-underscore-dangle": "off",
-    "i18next/no-literal-string": ["error", { markupOnly: true }],
+    "i18next/no-literal-string": [
+      "error",
+      { markupOnly: true, ignoreAttribute: ["data-testid", "to"] },
+    ],
     indent: ["error", 2],
     "react/jsx-one-expression-per-line": "off",
   },
   globals: {
     _IS_DEV_: true,
   },
+  overrides: [
+    {
+      files: ["**/src/**/*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": "off",
+      },
+    },
+  ],
 };
