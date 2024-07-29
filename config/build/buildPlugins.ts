@@ -25,7 +25,7 @@ export default function buildPlugins({
     new ReactRefreshPlugin(),
   ];
 
-  if (!isDev) {
+  if (isDev) {
     plugins.push(new webpack.HotModuleReplacementPlugin());
     plugins.push(
       new BundleAnalyzerPlugin({
