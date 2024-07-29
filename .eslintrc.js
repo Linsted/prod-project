@@ -24,7 +24,7 @@ module.exports = {
   rules: {
     "import/prefer-default-export": "warn",
     "object-curly-newline": "off",
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["warn", "windows"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-indent": [2, 2],
     "react/jsx-filename-extension": [
