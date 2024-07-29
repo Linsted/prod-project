@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import LangSwitcher from "widgets/LangSwitcher/LangSwitcher";
 
@@ -12,6 +13,8 @@ interface SidebarProps {
 
 function Sidebar({ className }: SidebarProps) {
   const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const { t } = useTranslation();
 
   function toggleCollapse() {
     setIsCollapsed((state) => !state);
@@ -33,7 +36,7 @@ function Sidebar({ className }: SidebarProps) {
         type="button"
         onClick={toggleCollapse}
       >
-        Toogle
+        {t("Змінити сайдбар")}
       </Button>
       <div className={classes.switchers}>
         <LangSwitcher />
