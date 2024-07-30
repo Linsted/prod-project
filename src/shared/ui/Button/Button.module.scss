@@ -21,3 +21,9 @@
         color: var(--bg-color);
     }
 }
+
+.clearInverted {
+    all: unset;
+    cursor: pointer;
+    color: var(--inverted-primary-color)
+}

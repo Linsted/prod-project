@@ -1,5 +1,6 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
+import Modal from "shared/ui/Modal/Modal";
 import Navbar from "widgets/Navbar/ui/Navbar";
 import Sidebar from "widgets/Sidebar/ui/SIdebar/Sidebar";
 import AppRouter from "./providers/router/ui/AppRouter";

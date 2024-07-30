@@ -19,7 +19,7 @@ module.exports = {
     sourceType: "module",
   },
 
-  plugins: ["react", "@typescript-eslint", "i18next"],
+  plugins: ["react", "@typescript-eslint", "i18next", "react-hooks"],
 
   rules: {
     "import/prefer-default-export": "warn",
@@ -41,7 +41,11 @@ module.exports = {
     "react/function-component-definition": "off",
     "react/jsx-no-constructed-context-values": "off",
     "operator-linebreak": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
     "react/jsx-no-bind": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
     "import/no-extraneous-dependencies": "off",
     "react/jsx-props-no-spreading": "warn",
     "no-shadow": "off",
@@ -58,7 +62,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["**/src/**/*.test.{ts,tsx}"],
+      files: ["**/src/**/*.{test, stories}.{ts,tsx}"],
       rules: {
         "i18next/no-literal-string": "off",
       },
